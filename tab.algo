@@ -1,0 +1,26 @@
+ALGORITHM checkpoint6
+VAR
+   tab1 : ARRAY_OF INTEGER[5];
+   tab2 : ARRAY_OF INTEGER[5];
+      i,j,Sum_of_overlapping:=0 sum_tab1,sum_tab2: INTEGER;
+
+
+   BEGIN
+      FOR i FROM 0 TO tab1.length-1 DO
+      tab1[i];
+      sum_tab1:=sum_tab1+tab1[i];
+         FOR j FROM 0 TO tab2.length-1 DO
+         sum_tab2:=sum_tab2+tab2[j];
+         if(tab1[i]==tab2[j])
+         Sum_of_overlapping:=Sum_of_overlapping+1;
+
+
+
+
+         END_FOR
+    END_FOR
+
+write(Sum_of_overlapping);
+write(sum_tab2+sum_tab1);
+
+END
